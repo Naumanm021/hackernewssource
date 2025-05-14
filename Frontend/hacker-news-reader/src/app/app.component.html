@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+</mat-toolbar>
+
+<main>
+  <app-search-bar (search)="onSearch($event)"></app-search-bar>
+  <app-story-list [searchQuery]="searchQuery"></app-story-list>
+</main>

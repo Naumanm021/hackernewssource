@@ -1,0 +1,105 @@
+#################################
+# OS-Specific Files
+#################################
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+#################################
+# Visual Studio / .NET Files
+#################################
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+out/
+TestResults/
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# NuGet Packages
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# Publish output
+publish/
+wwwroot/dist/
+wwwroot/node_modules/
+
+# Entity Framework Migrations
+Migrations/
+
+# ASP.NET Core Secrets
+secrets.json
+
+# Rider IDE
+.idea/
+
+#################################
+# Node.js / Frontend Files
+#################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+.env
+.env.local
+.env.development
+.env.production
+
+# Package lock files (optional, if using one lock system only)
+package-lock.json
+yarn.lock
+
+# React Native / Expo
+.expo/
+
+#################################
+# Logs & Temporary Files
+#################################
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.pid
+
+#################################
+# Coverage & Test Reports
+#################################
+coverage/
+.nyc_output/
+lcov-report/
+
+#################################
+# Others
+#################################
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.sql
+
+# Ignore local tools settings
+.localtoolsettings.json

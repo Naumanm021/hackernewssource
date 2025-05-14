@@ -1,0 +1,25 @@
+<mat-card class="story-card">
+  <mat-card-header>
+    <mat-card-title>
+      <a *ngIf="story.url; else noUrl" [href]="story.url" target="_blank" rel="noopener noreferrer">
+        {{ story.title }}
+      </a>
+      <ng-template #noUrl>
+        {{ story.title }}
+      </ng-template>
+    </mat-card-title>
+    <mat-card-subtitle *ngIf="domain">
+      <a [href]="'https://' + domain" target="_blank" rel="noopener noreferrer">
+        ({{ domain }})
+      </a>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="story-meta">
+      <span>{{ story.score }} points</span>
+      <span>by {{ story.by }}</span>
+      <span>{{ timeAgo }}</span>
+      <span>{{ story.descendants }} comments</span>
+    </div>
+  </mat-card-content>
+</mat-card>
